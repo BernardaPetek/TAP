@@ -35,10 +35,10 @@ def insideQ(P, T):
             if collinear_points(T, P1[i], P1[i + 1]):
                 if lies_on_segment(T, P1[i], P1[i + 1]):
                     return True
+                #rotiraj samo ce so kolinearne na desno
                 elif P[i][0] > T[0] and P[i][1] == T[1] and P[i+1][1] == T[1]:
                     rotate = True
                     P2 = rotate_curve()
-                # ce lezi na krivulji potem vrni true v splosnem drugac pa rotiraj
         if len(P2) != 0:
             P1 = P2.copy()
 
