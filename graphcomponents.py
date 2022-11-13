@@ -1,11 +1,12 @@
 import unittest
 
+
 def findComponents(V, E):
-    def dfs(vertex, graph, visited: set):
+    def dfs(vertex, graph, visited1: set):
         visited.add(vertex)
         for neighbour in graph[vertex]:
-            if neighbour not in visited:
-                dfs(neighbour, graph, visited)
+            if neighbour not in visited1:
+                dfs(neighbour, graph, visited1)
 
     # process the data from list to dict
     graph1 = {v: set() for v in V}
@@ -56,11 +57,12 @@ class TestGraphComponents(unittest.TestCase):
 
     def test_testcase5(self):
         V = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-        E = [(1,2), (2,3), (4,5), (7,8), (7,9), (9,10), (9,11), (9,12)]
+        E = [(1, 2), (2, 3), (4, 5), (7, 8), (7, 9), (9, 10), (9, 11), (9, 12)]
         result = findComponents(V, E)
         expected = [[1, 2, 3], [4, 5], [6], [7, 8, 9, 10, 11, 12]]
         self.assertEqual(result, expected)
 
 
 if __name__ == '__main__':
+    print("Testing examples")
     unittest.main()
