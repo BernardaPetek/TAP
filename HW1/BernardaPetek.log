@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2022.1.29)  12 NOV 2022 12:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2022.1.29)  13 NOV 2022 15:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -343,23 +343,118 @@ Underfull \hbox (badness 10000) in paragraph at lines 257--258
 
  []
 
+<graph10.png, id=55, 702.37407pt x 534.49687pt>
+File: graph10.png Graphic file (type png)
+<use graph10.png>
+Package pdftex.def Info: graph10.png  used on input line 261.
+(pdftex.def)             Requested size: 280.94466pt x 213.79495pt.
+<graph11.png, id=56, 1127.71312pt x 1045.65656pt>
+File: graph11.png Graphic file (type png)
+<use graph11.png>
+Package pdftex.def Info: graph11.png  used on input line 268.
+(pdftex.def)             Requested size: 225.53862pt x 209.12761pt.
+<graph12.png, id=57, 720.44156pt x 673.01437pt>
+File: graph12.png Graphic file (type png)
+<use graph12.png>
+Package pdftex.def Info: graph12.png  used on input line 274.
+(pdftex.def)             Requested size: 144.08575pt x 134.60048pt.
+<graph13.png, id=58, 771.63281pt x 513.41812pt>
+File: graph13.png Graphic file (type png)
+<use graph13.png>
+Package pdftex.def Info: graph13.png  used on input line 280.
+(pdftex.def)             Requested size: 154.32382pt x 102.6818pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--260
+Underfull \hbox (badness 10000) in paragraph at lines 284--285
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--263
+Underfull \hbox (badness 10000) in paragraph at lines 287--288
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 264--265
+Underfull \hbox (badness 10000) in paragraph at lines 289--290
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 266--267
+Underfull \hbox (badness 10000) in paragraph at lines 291--292
+
+ []
+
+[11] [12 <./graph10.png> <./graph11.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 293--294
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 294--296
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--298
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 301--302
+
+ []
+
+[13 <./graph12.png> <./graph13.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 317--318
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 321--322
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 324--325
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 344--345
+
+ []
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 380--381
+
+ []
+
+<graph14.png, id=76, 872.50969pt x 741.52031pt>
+File: graph14.png Graphic file (type png)
+<use graph14.png>
+Package pdftex.def Info: graph14.png  used on input line 384.
+(pdftex.def)             Requested size: 261.75493pt x 222.45781pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--391
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 392--395
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 396--399
+
+ []
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 400--403
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 404--407
 
  []
 
@@ -367,33 +462,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 266--267
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
-) [11] [12] (BernardaPetek.aux)
+) [16 <./graph14.png>] (BernardaPetek.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3274 strings out of 478593
- 49422 string characters out of 2844604
- 364680 words of memory out of 3000000
- 21431 multiletter control sequences out of 15000+600000
+ 3329 strings out of 478593
+ 50267 string characters out of 2844604
+ 364730 words of memory out of 3000000
+ 21486 multiletter control sequences out of 15000+600000
  478022 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,9n,62p,444b,235s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,10n,62p,866b,235s stack positions out of 5000i,500n,10000p,200000b,80000s
 <C:/Users/petek/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmbx12.pfb><C:/Users/petek/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmex10.pfb><C:/Users/petek/AppData/Local/Programs/MiKTeX/fonts/type1/p
 ublic/amsfonts/cm/cmmi12.pfb><C:/Users/petek/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/petek/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/petek/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/petek/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/petek/App
-Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/
-petek/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.
-pfb>
-Output written on BernardaPetek.pdf (12 pages, 1256188 bytes).
+s/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/petek/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/petek/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/petek/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/petek/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/p
+etek/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C
+:/Users/petek/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy
+8.pfb><C:/Users/petek/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+/symbols/msbm10.pfb>
+Output written on BernardaPetek.pdf (16 pages, 1459767 bytes).
 PDF statistics:
- 100 PDF objects out of 1000 (max. 8388607)
+ 129 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
 

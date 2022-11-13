@@ -252,9 +252,34 @@ In general, this discrete metric on space $X$ induces a metric space $(X,d)$ whe
 \textbf{(b)} Because the distance between any two pairwise distinct elements is $1$, every triangle $abc$ with pairwise distinct elements $a$, $b$ and $c$ is equilateral (all three edges have the same lenght 1).
 
 \subsection{Homeomorphic spaces} 
-In this exercise I was working with spaces $X_{n} = ...$ and $Y_{n}=...$ \\
+In this exercise I was working with spaces $X_{n} = S^{n-1} \times [0,1] \subset \mathbb{R}^{n+1}$ and $Y_{n}=\{(x_{1},  ... , x_{n}) \in \mathbb{R}^n; 1 \leq x_{1}^2 + ... + x_{n}^2 \leq 4 \}$. \\
 
-\noindent Spaces $X_{1}$, $Y_{1}$, $X_{2}$, $Y_{2}$ that I've drawn can be seen on Figures 10, 11 and 12. \\
+\noindent Spaces $X_{1}$, $Y_{1}$, $X_{2}$, $Y_{2}$ that I've drawn can be seen on Figures 10, 11, 12 and 13. \\
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.40] {graph10}
+	\caption{\label{fig:10} $X_{2}$ space}
+\end{figure}
+
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.20] {graph11}
+	\caption{\label{fig:11} $Y_{2}$ space}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.20] {graph12}
+	\caption{\label{fig:12} $X_{1}$ space }
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.20] {graph13}
+	\caption{\label{fig:13} $Y_{1}$ space }
+\end{figure}
 
 \noindent I got the inspiration for the proof for a general $n$ from the solved problems book by asist. dr. Aleksandra Franc (2) on spletna učilnica where lies the proof for $n=2$. I generalized the idea for $n \in \mathbb{N}$. \\
 
@@ -264,6 +289,129 @@ In this exercise I was working with spaces $X_{n} = ...$ and $Y_{n}=...$ \\
 \noindent \textbf{Theorem} Let $X$ and $Y$ be topological spaces. If we can find continuous maps $f : X \rightarrow Y$ and $g : Y \rightarrow X$ such that $f \circ g = id_{Y}$ and $g \circ f = id_{X}$, then X and Y are homeomorphic. \\
 
 \noindent \textbf{Proof that $X_{n}$ and $Y_{n}$ are homeomorphic for any $n \in \mathbb{N}$:} \\
+
+\noindent First I rewrote $X_{n}$ as: \\
+$$X_{n}=\{(x_{1},  ... , x_{n+1}) \in \mathbb{R}^{n+1}; \  x_{1}^2 + ... + x_{n}^2 = 1, \ 0 \leq x_{n+1} \leq 1 \}$$ \\
+\noindent Next, I defined two functions $f$ and $g$ and then used the beforementioned theorem.   \\
+
+\noindent I defined $f: X_{n} \rightarrow Y_{n}$ as:  \\
+$$f(x_{1},...,x_{n+1}) = ((x_{n+1} + 1) \cdot x_1, ... , (x_{n+1} + 1) \cdot x_1, (x_{n} + 1) \cdot x_{n+1} )$$
+
+
+\noindent The idea was that I took the last coordinate, added 1 and multiplied it with other coordinates to lower the dimension. It is the same idea as for $n=2$, where we mapped surface to the plane. The proof that $f$ is well defined ($f(x_{1},...,x_{n+1}) \in Y_{n}$): \\
+
+\noindent Let $(x_{1},...,x_{n+1}) \in X_{n}$. That means $x_{1}^2 + ... + x_{n}^2 = 1$ and $0 \leq x_{n+1} \leq 1$. Subsequently: 
+
+	\begin{align*}
+((x_{n+1} + 1) \cdot x_{1})^2 + ... +  ((x_{n+1} + 1) \cdot x_{n})^2
+&= (x_{n+1} + 1)^2 \cdot x_{1}^2 + ... +  (x_{n+1} + 1)^2 \cdot x_{n}^2  \\
+&= (x_{n+1} + 1)^2 \cdot (x_1^2 + ... + x_n^2) \\
+&=  (x_{n+1} + 1)^2 \cdot 1 \\
+&=  (x_{n+1} + 1)^2 
+\end{align*}
+
+\noindent Because $0 \leq x_{n+1} \leq 1$ it holds that: 
+
+$$1 \leq (x_{n+1} + 1)^2  \leq 4$$
+
+\noindent And so: $f(x_{1},...,x_{n+1}) \in Y_{n}$ \\
+
+
+
+\noindent I also defined $g: Y_{n} \rightarrow X_{n}$ as:  \\
+$$g(x_{1},...,x_{n}) = (\frac{x_1}{\sqrt{x_1^2 + ... + x_n^2}}, ... ,  \frac{x_n}{\sqrt{x_1^2 + ... + x_n^2}}, \sqrt{x_1^2 + ... + x_n^2} - 1)$$
+
+\noindent The idea was to make every vector from origin to point unit by dividing it with Euclidean distance $||x_{1},...,x_{n}||_2 = \sqrt{x_1^2 + ... + x_n^2}$ from origin to its ending point and instead express their lenght in the last coordinate. I wrote $r =||x_{1},...,x_{n}||_2$. The proof that $g$ is well defined $g(x_{1},...,x_{n}) \in X_{n}$: \\
+
+\noindent Let $(x_{1},...,x_{n}) \in Y_{n}$. 
+
+\begin{align*} 
+	\left(\frac{x_1}{\sqrt{x_1^2 + ... + x_n^2}}\right) ^2 \ + \ ... \ + \ \left(\frac{x_n}{\sqrt{x_1^2 + ... + x_n^2}}\right)^2
+	&= \frac{x_1^2}{r^2} + ... + \frac{x_n^2}{r^2} \\
+	&= \frac{x_1^2 + ... + x_n^2}{r^2}	\\
+	&= \frac{x_1^2 + ... + x_n^2}{x_1^2 + ... + x_n^2} \\
+	&= 1
+\end{align*}
+
+\noindent Because $1 \leq x_{1}^2 + ... + x_{n}^2 \leq 4$ it holds that: 
+
+
+\begin{align*} 
+1 &\leq \sqrt{x_1^2 + ... + x_n^2} &\leq 2 \\
+0 &\leq \sqrt{x_1^2 + ... + x_n^2} - 1 &\leq 1
+\end{align*}
+
+\noindent And so $g$ is well defined. \\
+
+\noindent The proof that $f \circ g = id_{Y_n}$:
+\begin{align*}
+	f(g(x_1,...,x_n)) &= f(\frac{x_1}{r}, ... , \frac{x_n}{r}, r-1) \\
+	&= ((r-1+1) \cdot \frac{x_1}{r},...,(r-1+1) \cdot \frac{x_n}{r}) \\
+	&= (r \cdot \frac{x_1}{r},..., r \cdot \frac{x_n}{r}) \\
+	&= (x_1,..., x_n)
+	\end{align*}
+
+\noindent The proof that $g \circ f = id_{X_n}$:
+
+\noindent In my computation are used the following preconditions: $x_{1}^2 + ... + x_{n}^2 = 1, \ 0 \leq x_{n+1} \leq 1$.
+
+\begin{align*}
+	\sqrt{(x_{n+1} + 1)^2 \cdot x_1 ^2+...+(x_{n+1}+1)^2 \cdot x_n^2}  & = \sqrt{(x_{n+1}+1)^2(x_1^2 + ... + x_n^2)} \\
+	&= \sqrt{(x_{n+1}+1)^2 \cdot (x_1^2 + ... + x_n^2)} \\
+	&= \sqrt{(x_{n+1}+1)^2 } \\
+	&= |(x_{n+1}+1)| \\
+	&= (x_{n+1}+1)
+\end{align*}
+
+
+\begin{align*}
+	g \circ f &= g(f(x_1,...,x_n,x_{n+1})) \\
+	&= g((x_{n+1}+1)x_1,...,(x_{n+1}+1)x_n) \\
+	&= \left( \frac{(x_{n+1}+1)x_1}{x_{n+1}+1},...,\frac{(x_{n+1}+1)x_n}{x_{n+1}+1}, x_{n+1}+1-1 \right) \\
+	&= (x_1, ...,x_n,x_{n+1})
+\end{align*}
+
+\qed
+
+	\section{Programming problems}
+\subsection{ Deciding connectivity} 
+To find connected components in graph I used the dfs algorithm. My program graphcomponents.py consists of function findComponents. Its inputs are list of vertices V and list of edges E. Inside function there is another function, named dfs, which is defined only locally. Its inputs are vertex, graph that is a set of edges and set named visited, that contains vertices already visited by the dfs algorithm. Dfs algorithm searches through the vertices and edges and add visited vertices in visited set. Visited vertices are part of one of the connected components. In the main while loop function dfs is called on every iteration and list of components is updated with lists of visited vertices until there are no more vertices left in the graph. Vertices in components are sorted by numbers from the smallest to the greatest.
+
+\noindent I tested my program on five different test cases (one of them can be seen on Figure 14):  \\
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.30] {graph14}
+	\caption{\label{fig:14} Testing case in Deciding connectivity problem.}
+\end{figure}
+
+\noindent $V = [1, 2, 3, 4, 5, 6, 7, 8] $ \\
+$E = [(1, 2), (2, 3), (1, 3), (4, 5), (5, 6), (5, 7), (6, 7), (7, 8)]$ \\
+$findComponents(V, E) = [[1, 2, 3], [4, 5, 6, 7, 8]] $ \\
+
+\noindent $V = [1, 2, 3, 4, 5]$ \\
+$E = [(1, 2), (1, 3), (1, 4), (1, 5)]$ \\
+$findComponents(V, E) = [[1, 2, 3, 4, 5]] $ \\
+
+\noindent $V = [1, 2, 3, 4, 5, 6, 7, 8, 9] $ \\
+$E = [(1, 2), (1, 3), (1, 8), (3, 7), (4, 5), (4, 6), (4, 9), (5, 6), (5, 9), (7, 8)]$ \\
+$findComponents(V, E) = [[1, 2, 3, 7, 8], [4, 5, 6, 9]] $ \\
+
+\noindent $V = [1, 2, 3, 4, 5] $ \\
+$E = []$ \\
+$findComponents(V, E) = [[1], [2], [3], [4], [5]] $ \\
+
+\noindent $V = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] $ \\
+$E = [(1, 2), (2, 3), (4, 5), (7, 8), (7, 9), (9, 10), (9, 11), (9, 12)]$ \\
+$findComponents(V, E) = [[1, 2, 3], [4, 5], [6], [7, 8, 9, 10, 11, 12]] $ \\
+
+\subsection{Shelling discs} 
+
+My file shelling.py contains function shelling(T) that outputs 
+
+
+
+
 
 
 
