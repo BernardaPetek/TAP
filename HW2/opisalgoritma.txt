@@ -1,0 +1,24 @@
+ima kaj orientiranih neighbourjev? Ne, pusti jo kot je in daj v oriented
+
+dokler množica sklad ni prazna
+poglej vse sosede od orientiranega in jih orientiraj. potem jih daj na sklad in v množico orientiranih. 
+preveri ko jih orientiraš da ne grejo v nasprotje z že orientiranimi. 
+
+doker sklad ni prazen
+vzemi element s sklada
+pojdi skoz njegove sosede in jih orientiraj 
+---
+
+dokler sklad ni prazen. najprej je na skladu sam poljuben prvi element, ki je hkrati tudi v množici oriented.
+vzemi element s sklada.
+poglej sosede in jih orientiraj skladno z elementom s sklada. če so že bili orintirani potem preveri da se orientacija sklada s tako kako bi dal. če se ne vrni false. če se whatevs.
+
+če še niso bli orientirani potem jih orientiraj in daj na sklad. 
+
+
+0,1,2
+2,0,1
+1,2,0
+0,1,2
+---
+
